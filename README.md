@@ -165,10 +165,11 @@ gray = toGray(img)
 ### Kernel
 > A kernel is essentially a fixed size array of numerical coefficeints
 along with an anchor point in that array, which is tipically located at the center.<br>
-The functions use 5x5 kernel using NumPy
+The functions mostly use a 5x5 kernel using NumPy
 ```python
 kernel = np.ones((5,5),np.float32)/25
 ```
+> or 3x3 kernel defined in python lib
 
 ### Laplacian (Edge Detection)
 > Laplacian edge detector uses only one kernel.
