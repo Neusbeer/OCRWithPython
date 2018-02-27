@@ -176,15 +176,17 @@ It calculates the first derivatives of the image separately for the X and Y axes
 Sobel uses 2x 3x3 kernels
 first order derivatives
 
-Sobel Kernel X | Sobel Kernel Y
----------------|---------------
-![Sobel Kernel X](images/SobelKernelX.png) | ![Sobel Kernel Y](images/SobelKernelY.png)
+| Sobel Kernel X                             | Sobel Kernel Y                             |
+|--------------------------------------------|--------------------------------------------|
+| ![Sobel Kernel X](images/SobelKernelX.png) | ![Sobel Kernel Y](images/SobelKernelY.png) |
 
 | Original                                     |
 | -------------------------------------------- |
 | ![Sobel Original](images/sobel_original.jpg) |
 
-![Sobel X](images/sobelX_result.jpg) | | ![Sobel Y](images/sobelY_result.jpg)
+| Sobel X                              | Sobel Y                              |
+| ------------------------------------ | ------------------------------------ |
+| ![Sobel X](images/sobelX_result.jpg) | ![Sobel Y](images/sobelY_result.jpg) |
 
 
 
