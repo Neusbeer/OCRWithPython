@@ -181,10 +181,10 @@ Sobel Kernel X | Sobel Kernel Y
 ![Sobel Kernel X](images/SobelKernelX.png) | ![Sobel Kernel Y](images/SobelKernelY.png)
 
 
- | Original |
----|----------|---
- | ![Sobel Original](images/sobel_original) |
-![Sobel X](images/sobelX_result.jpg) | | ![Sobel Y](images/sobelY_result.jpg)
+                                     | Original                                     |
+-------------------------------------|----------------------------------------------|-------------------------------------
+                                     | ![Sobel Original](images/sobel_original.jpg) |
+![Sobel X](images/sobelX_result.jpg) |                                              | ![Sobel Y](images/sobelY_result.jpg)
 
 
 
