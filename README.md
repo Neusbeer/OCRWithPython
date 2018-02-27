@@ -160,11 +160,11 @@ gray = toGray(img)
 ## FAQ/Explanations
 
 ### Convolution
-> Convolution is an operation between every part <br />of an image and an operator (kernel) <br />*or*<br />convolution is simply an element-wise multiplication of two matrices followed by a sum.
+> Convolution is an operation between every part of an image and an operator (kernel) <br />**or**<br />convolution is simply an element-wise multiplication of two matrices followed by a sum.
 
 ### Kernel
 > A kernel is essentially a fixed size array of numerical coefficeints
-along with an anchor point in that array, which is tipically located at the center.
+along with an anchor point in that array, which is tipically located at the center.<br>
 The functions use 5x5 kernel using NumPy
 ```python
 kernel = np.ones((5,5),np.float32)/25
