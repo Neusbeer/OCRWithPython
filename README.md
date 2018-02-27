@@ -166,9 +166,9 @@ kernel = np.ones((5,5),np.float32)/25
 It calculates second order derivatives in a single pass
 2nd order derivative, so it is extremely sensitive to noise
 
-Original | Result
----------|---------
-![Laplacian Original](images/laplacian_original.jpg) | ![Laplacian Result](images/laplacian_result.jpg)
+| Original                                             | Result                                           |
+|------------------------------------------------------|--------------------------------------------------|
+| ![Laplacian Original](images/laplacian_original.jpg) | ![Laplacian Result](images/laplacian_result.jpg) |
 
 ### Sobel (Edge Detection)
 > Sobel edge detector is a gradient based method based on the first order derivatives.
