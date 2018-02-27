@@ -105,21 +105,13 @@ def laplacian(img):
 
 
 def sobelX(img):
-    return cv2.Sobel(img,cv2.CV_64F,1,0,ksize=5)
-
-
-def sobelY(img):
-    return cv2.Sobel(img,cv2.CV_64F,0,1,ksize=5)
-
-
-def sobelX_abs64f(img):
     # Output dtype = cv2.CV_64F. Then take its absolute and convert to cv2.CV_8U
     sobelx64f = cv2.Sobel(img,cv2.CV_64F,1,0,ksize=5)
     abs_sobel64f = np.absolute(sobelx64f)
     return np.uint8(abs_sobel64f)
 
 
-def sobelY_abs64f(img):
+def sobelY(img):
     # Output dtype = cv2.CV_64F. Then take its absolute and convert to cv2.CV_8U
     sobelx64f = cv2.Sobel(img,cv2.CV_64F,0,1,ksize=5)
     abs_sobel64f = np.absolute(sobelx64f)

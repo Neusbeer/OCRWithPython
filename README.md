@@ -161,9 +161,9 @@ gray = toGray(img)
 
 ### Convolution
 > In a very general sense, convolution is an operation
-between every part of an image and an operator (kernel).
-or
-convolution is simply an element-wise multiplication of two matrices followed by a sum.
+> between every part of an image and an operator (kernel).
+> or
+> convolution is simply an element-wise multiplication of two matrices followed by a sum.
 
 ### Kernel
 > A kernel is essentially a fixed size array of numerical coefficeints
