@@ -102,9 +102,6 @@ gray = toGray(img)
 blurred = blur(gray)
 laplaced = laplacian(blurred)
 ```
-Original | Result
----------|---------
-![Laplacian Original](images/laplacian_original.jpg)|![Laplacian Result](images/laplacian_result.jpg)
 ### sobelX(img)
 > Sobel Edge detector (X)
 for better edge detection it uses 64Bit in filter and outputs 8Bits
@@ -114,10 +111,7 @@ for better edge detection it uses 64Bit in filter and outputs 8Bits
 img = cv2.imread('image.png')
 final_img = sobelX(img)
 ```
-Original | Result
----------|---------
-![Original](images/sobel_original.jpg)|![Result](images/sobelX_result.jpg)
-### sobelX(img)
+### sobelY(img)
 > Sobel Edge detector (Y)
 for better edge detection it uses 64Bit in filter and outputs 8Bits
 ##### prerequisites:
@@ -126,10 +120,6 @@ for better edge detection it uses 64Bit in filter and outputs 8Bits
 img = cv2.imread('image.png')
 final_img = sobelY(img)
 ```
-Original | Result
----------|---------
-![Original](images/sobel_original.jpg)|![Result](images/sobelY_result.jpg)
-
 ### showImg(img)
 > Shows image using Qt
 on Windows install Xming to use
@@ -175,6 +165,9 @@ kernel = np.ones((5,5),np.float32)/25
 > Laplacian edge detector uses only one kernel.
 It calculates second order derivatives in a single pass
 2nd order derivative, so it is extremely sensitive to noise
+Original | Result
+---------|---------
+![Laplacian Original](images/laplacian_original.jpg) | ![Laplacian Result](images/laplacian_result.jpg)
 
 ### Sobel (Edge Detection)
 > Sobel edge detector is a gradient based method based on the first order derivatives.
