@@ -105,6 +105,30 @@ laplaced = laplacian(blurred)
 Original | Result
 ---------|---------
 ![Laplacian Original](images/laplacian_original.jpg)|![Laplacian Result](images/laplacian_result.jpg)
+### sobelX(img)
+> Sobel Edge detector (X)
+for better edge detection it uses 64Bit in filter and outputs 8Bits
+##### prerequisites:
+* none
+```python
+img = cv2.imread('image.png')
+final_img = sobelX(img)
+```
+Original | Result
+---------|---------
+![Original](images/sobel_original.jpg)|![Result](images/sobelX_result.jpg)
+### sobelX(img)
+> Sobel Edge detector (Y)
+for better edge detection it uses 64Bit in filter and outputs 8Bits
+##### prerequisites:
+* none
+```python
+img = cv2.imread('image.png')
+final_img = sobelY(img)
+```
+Original | Result
+---------|---------
+![Original](images/sobel_original.jpg)|![Result](images/sobelY_result.jpg)
 
 ### showImg(img)
 > Shows image using Qt
@@ -138,6 +162,8 @@ gray = toGray(img)
 ### Convolution
 > In a very general sense, convolution is an operation
 between every part of an image and an operator (kernel).
+or
+convolution is simply an element-wise multiplication of two matrices followed by a sum.
 
 ### Kernel
 > A kernel is essentially a fixed size array of numerical coefficeints

@@ -2,6 +2,44 @@ from PIL import Image
 import numpy as np
 import cv2
 
+laplacian_kernel = np.array((
+	[0, 1, 0],
+	[1, -4, 1],
+	[0, 1, 0]), dtype="int")
+
+sobelX_kernel = np.array((
+	[-1, 0, 1],
+	[-2, 0, 2],
+	[-1, 0, 1]), dtype="int")
+
+sobelY_kernel = np.array((
+	[-1, -2, -1],
+	[0, 0, 0],
+	[1, 2, 1]), dtype="int")
+
+sharpen_kernel = np.array((
+    [0, -1, 0],
+    [-1, 5, -1],
+    [0, -1, 0]), dtype="int")
+
+emboss_kernel = np.array((
+    [-2, -1, 0],
+    [-1, 1, 1],
+    [0, 1, 2]), dtype="int")
+
+blur_kernel = np.array((
+    [0.0625, 0.125, 0.0625],
+    [0.125, 0.25, 0.125],
+    [0.0625, 0.125, 0.0625]), dtype="int")
+
+outline_kernel = np.array((
+    [-1, -1, -1],
+    [-1, 8, -1],
+    [-1, -1, -1]), dtype="int")
+
+
+
+
 
 def otsu_thresholding(img):
     # Otsu's thresholding
@@ -26,7 +64,7 @@ def bw_image(img):
     gray = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
     #gray = cv2.medianBlur(gray, 3)
     return gray
-    
+
 
 def wide_edge_detection(img):
     return cv2.Canny(img, 10, 200)
@@ -64,6 +102,28 @@ def convolution_2d(img):
 
 def laplacian(img):
     return cv2.Laplacian(img,cv2.CV_64F)
+
+
+def sobelX(img):
+    return cv2.Sobel(img,cv2.CV_64F,1,0,ksize=5)
+
+
+def sobelY(img):
+    return cv2.Sobel(img,cv2.CV_64F,0,1,ksize=5)
+
+
+def sobelX_abs64f(img):
+    # Output dtype = cv2.CV_64F. Then take its absolute and convert to cv2.CV_8U
+    sobelx64f = cv2.Sobel(img,cv2.CV_64F,1,0,ksize=5)
+    abs_sobel64f = np.absolute(sobelx64f)
+    return np.uint8(abs_sobel64f)
+
+
+def sobelY_abs64f(img):
+    # Output dtype = cv2.CV_64F. Then take its absolute and convert to cv2.CV_8U
+    sobelx64f = cv2.Sobel(img,cv2.CV_64F,0,1,ksize=5)
+    abs_sobel64f = np.absolute(sobelx64f)
+    return np.uint8(abs_sobel64f)
 
 
 def blur(img):
