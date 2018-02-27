@@ -180,6 +180,7 @@ Sobel Kernel X | Sobel Kernel Y
 ---------------|---------------
 ![Sobel Kernel X](images/SobelKernelX.png) | ![Sobel Kernel Y](images/SobelKernelY.png)
 
+
  | Original |
 -|----------|-
 ![Sobel X](images/sobelX_result.jpg) | | ![Sobel Y](images/sobelY_result.jpg)
