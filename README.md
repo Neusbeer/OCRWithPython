@@ -1,46 +1,4 @@
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [Python OCR/Image Tools/Functions](#python-ocrimage-toolsfunctions)
-	- [:package: Tools/Functions for Image Processing using PIL and/or OpenCV2](#package-toolsfunctions-for-image-processing-using-pil-andor-opencv2)
-		- [otsu_thresholding(img)](#otsuthresholdingimg)
-				- [prerequisites:](#prerequisites)
-		- [gaussian_otsu_thresholding(img)](#gaussianotsuthresholdingimg)
-				- [prerequisites:](#prerequisites)
-		- [global_thresholding(img)](#globalthresholdingimg)
-				- [prerequisites:](#prerequisites)
-		- [bw_image(img)](#bwimageimg)
-				- [prerequisites:](#prerequisites)
-		- [auto_edge_detection(img, sigma=0.33)](#autoedgedetectionimg-sigma033)
-				- [prerequisites:](#prerequisites)
-		- [wide_edge_detection(img)](#wideedgedetectionimg)
-				- [prerequisites:](#prerequisites)
-		- [tight_edge_detection(img)](#tightedgedetectionimg)
-				- [prerequisites:](#prerequisites)
-		- [percentage_scale(img,percentage)](#percentagescaleimgpercentage)
-				- [prerequisites:](#prerequisites)
-				- [example, scales 50%](#example-scales-50)
-		- [convolution_2d(img)](#convolution2dimg)
-				- [prerequisites:](#prerequisites)
-		- [laplacian(img)](#laplacianimg)
-				- [prerequisites:](#prerequisites)
-		- [sobelX(img)](#sobelximg)
-				- [prerequisites:](#prerequisites)
-		- [sobelY(img)](#sobelyimg)
-				- [prerequisites:](#prerequisites)
-		- [showImg(img)](#showimgimg)
-				- [prerequisites:](#prerequisites)
-		- [blur(img)](#blurimg)
-				- [prerequisites:](#prerequisites)
-		- [toGray(img)](#tograyimg)
-				- [prerequisites:](#prerequisites)
-	- [FAQ/Explanations](#faqexplanations)
-		- [Convolution](#convolution)
-		- [Kernel](#kernel)
-		- [Laplacian (Edge Detection)](#laplacian-edge-detection)
-		- [Sobel (Edge Detection)](#sobel-edge-detection)
-		- [Tools/Functions for OCR reading](#toolsfunctions-for-ocr-reading)
-
-<!-- /TOC --># Python OCR/Image Tools/Functions
+# Python OCR/Image Tools/Functions
 
 ## :package: Tools/Functions for Image Processing using PIL and/or OpenCV2
 ```python
