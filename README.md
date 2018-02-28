@@ -162,8 +162,8 @@ kernel = np.ones((5,5),np.float32)/25
 > or 3x3 kernel defined in python lib
 
 ### Laplacian (Edge Detection)
-> Laplacian edge detector uses only one kernel.
-It calculates second order derivatives in a single pass
+> Laplacian edge detector uses only one kernel.<br>
+It calculates second order derivatives in a single pass<br>
 2nd order derivative, so it is extremely sensitive to noise
 
 | Original                                             | Result                                           |
@@ -171,10 +171,10 @@ It calculates second order derivatives in a single pass
 | ![Laplacian Original](images/laplacian_original.jpg) | ![Laplacian Result](images/laplacian_result.jpg) |
 
 ### Sobel (Edge Detection)
-> Sobel edge detector is a gradient based method based on the first order derivatives.
-It calculates the first derivatives of the image separately for the X and Y axes.
-Sobel uses 2x 3x3 kernels
-first order derivatives
+> Sobel edge detector is a gradient based method based on the first order derivatives.<br>
+It calculates the first derivatives of the image separately for the X and Y axes.<br>
+Sobel uses 2x 3x3 kernels<br>
+first order derivatives<br>
 
 | Sobel Kernel X                             | Sobel Kernel Y                             |
 |--------------------------------------------|--------------------------------------------|
