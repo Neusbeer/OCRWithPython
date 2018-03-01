@@ -1,5 +1,4 @@
-# Python OCR/Image Tools/Functions
-
+# Python OCR/Image Tools/Functions Optimized For Captcha Breaking
 ## :package: Tools/Functions for Image Processing using PIL and/or OpenCV2
 ```python
 from img-prep import *
